@@ -1,0 +1,26 @@
+[data-xkr-home] article[data-testid="tweet"]:not(article[data-testid="tweet"] article, [role="dialog"] article) {
+  outline: 1px solid rgba(29, 155, 240, 0.3);
+  outline-offset: -1px;
+  scroll-margin-block-start: 66px;
+  scroll-margin-block-end: 12px;
+}
+
+[data-xkr-home] article[data-xkr-selected] {
+  outline: 3px solid #1d9bf0 !important;
+  outline-offset: -3px !important;
+}
+
+[data-xkr-home] article[data-xkr-replied] {
+  outline: 2px solid #eab308 !important;
+  outline-offset: -2px !important;
+}
+
+[data-xkr-home] article[data-xkr-replied][data-xkr-selected] {
+  box-shadow: inset 5px 0 #1d9bf0;
+}
+
+@media (forced-colors: active) {
+  [data-xkr-home] article[data-xkr-selected] {
+    outline-color: Highlight !important;
+  }
+}

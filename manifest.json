@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "X 键盘浏览与快捷回复",
+  "version": "1.3.0",
+  "description": "在 X 首页用上下键选择推文，按 X 点赞，空格打开回复框，回车发送。",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
